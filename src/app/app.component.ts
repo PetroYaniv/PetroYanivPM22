@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {UpPageComponent} from "./uppage/uppage.component";
+import {SidebarComponent} from "./sidebar/sidebar.component";
 
 @Component({
   standalone: true,
@@ -7,7 +8,8 @@ import {UpPageComponent} from "./uppage/uppage.component";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   imports: [
-    UpPageComponent
+    UpPageComponent,
+    SidebarComponent
   ]
 })
 export class AppComponent {

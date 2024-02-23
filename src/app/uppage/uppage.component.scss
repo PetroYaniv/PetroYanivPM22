@@ -1,27 +1,42 @@
-.Search {
 
-  margin-left: 80px;
-  padding-top: 15px;
+.d7:after {content:""; clear:both; display:table}
+.d7 form {
+  width: auto;
+  float: left;
+  margin-left: 60px;
+  top: 15px;
+  position: absolute;
+
 }
+.d7 input {
+  width: 180px;
+  height: 32px;
+  padding-left: 15px;
+  border-radius: 32px;
+  border: 2px solid ;
 
-.Search121 {
+  outline: none;
   position: relative;
-
+  transition: .3s linear;
 }
-
-.Search2 {
+.d7 input:focus {
+  width: 180px;
+}
+.d7 button {
+  left: 152px;
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
   position: absolute;
-  left: 20px;
-  font-size: 12px;
-  bottom: 4px;
-}
+  top: -2px;
 
-.Search3 {
-  position: absolute;
-  left: 220px;
-  padding-top: 13px;
 }
+.d7 button:before{
+  content: "\f002";
+  font-family: FontAwesome;
 
+}
 .HeadI {
   padding-right: 25px;
   position: absolute;
@@ -78,10 +93,10 @@
 }
 
 .HeaderMenu {
-  position: absolute;
+
   align-items: center;
   display: flex;
-  top: 25px;
+  padding-top: 25px;
   width: 20px;
   padding-left: 10px;
 }
