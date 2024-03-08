@@ -77,12 +77,35 @@ button:hover {
   padding-left: 80px;
 }
 
+.StraficB1 {
+  position: absolute;
+  padding-top: 23px;
+  right: 140px;
+}
+
+.StraficB2 {
+  position: absolute;
+  padding-top: 23px;
+  right: 100px;
+}
+
+.StraficB3 {
+  position: absolute;
+  padding-top: 23px;
+  right: 55px;
+}
+
+
 .Straficktext {
   position: absolute;
   padding-top: 10px;
   padding-left: 100px;
 }
 
+app-strafick-graf {
+
+
+}
 
 button:disabled {
   background-color: #eee;

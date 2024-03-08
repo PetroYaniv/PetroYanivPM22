@@ -5,6 +5,8 @@ import {MapComponent} from "./map/map.component";
 import {GrafAComponent} from "./graf-a/graf-a.component";
 import {GrafbComponent} from "./grafb/grafb.component";
 import {GrafcComponent} from "./grafc/grafc.component";
+import {StrafickGrafComponent} from "./strafick-graf/strafick-graf.component";
+import {HttpClientModule} from "@angular/common/http";
 
 @Component({
   standalone: true,
@@ -17,9 +19,19 @@ import {GrafcComponent} from "./grafc/grafc.component";
     MapComponent,
     GrafAComponent,
     GrafbComponent,
-    GrafcComponent
+    GrafcComponent,
+    StrafickGrafComponent,
   ]
 })
+
 export class AppComponent {
-  title = 'Tour of Heroes';
+  title = 'appmodule';
+  ngOnInit() {
+
+  }
+  constructor() {
+
+  }
+
+
 }
