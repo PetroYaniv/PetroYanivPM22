@@ -23,7 +23,6 @@ export class StrafickGrafComponent {
 
   linechar:any;
   constructor(private service: SgrafService) {
-    console.log("Hello");
     Chart.register(...registerables);
 
   }
@@ -32,7 +31,6 @@ export class StrafickGrafComponent {
   ngOnInit() {
     this.service.GetDataJson().subscribe(data => {
       this.Grafinfo = data;
-      console.log(this.Grafinfo);
       this.reloadContent('y', this.Grafinfo);
     })
   }

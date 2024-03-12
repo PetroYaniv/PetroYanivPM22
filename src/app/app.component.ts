@@ -7,6 +7,8 @@ import {GrafbComponent} from "./grafb/grafb.component";
 import {GrafcComponent} from "./grafc/grafc.component";
 import {StrafickGrafComponent} from "./strafick-graf/strafick-graf.component";
 import {HttpClientModule} from "@angular/common/http";
+import {GoogleGrafComponent} from "./google-graf/google-graf.component";
+import {StrafickinfoComponent} from "./strafickinfo/strafickinfo.component";
 
 @Component({
   standalone: true,
@@ -21,6 +23,8 @@ import {HttpClientModule} from "@angular/common/http";
     GrafbComponent,
     GrafcComponent,
     StrafickGrafComponent,
+    GoogleGrafComponent,
+    StrafickinfoComponent,
   ]
 })
 

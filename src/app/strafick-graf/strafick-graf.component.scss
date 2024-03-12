@@ -16,3 +16,13 @@
   background: #5656ec;
   border-radius: 20%;
 }
+.StrafickGraf {
+  // oveflow: hidden;
+
+  canvas {
+    max-height: 100%!important;
+  }
+
+  width: 900px;
+  height: 100vh;
+}

@@ -3,32 +3,40 @@ app-uppage{
   position: absolute;
   width: calc(100% - 80px);
   top: 0;
-  padding-left: 70px;
+  left: 73px;
+
+}
+
+
+app-strafick-graf {
+  position: absolute;
+  height: 80vh;
+  width: 1400px;
+  left: 90px;
+  top: 1600px;
 }
 
 .DashBOR {
-  position: absolute;
+
   display: flow;
-  left: 130px;
+  padding-left: 60px;
   padding-top: 20px;
   font-size: 25px;
 }
 
 .DashB {
 
-  position: relative;
-  bottom: 3000px;
-
+ padding-top:90px;
   opacity: 0.7;
 }
 
 .DashBD {
-  position: absolute;
+
   display: flow;
   margin-top: 20px;
-  left: 130px;
+  padding-left: 60px;
 
-  padding-top: 60px;
+
 }
 
 
@@ -44,6 +52,12 @@ h2, h3 {
 }
 body {
   margin: 2em;
+}
+.Side{
+  width: calc(100% - 80px);
+  top: 0;
+  padding-left: 70px;
+
 }
 body, input[type="text"], button {
   color: #333;
@@ -66,44 +80,45 @@ button:hover {
   color: white;
 }
 .StrafickUp{
-  position: relative;
-  bottom: 1650px;
+ padding-top: 1170px;
 }
 
 .Strafickline {
   position: absolute;
   padding-top: 50px;
   width: 1400px;
-  padding-left: 80px;
+  padding-left: 10px;
 }
 
 .StraficB1 {
-  position: absolute;
+
   padding-top: 23px;
-  right: 140px;
+  margin-right: 40px;
 }
 
-.StraficB2 {
-  position: absolute;
-  padding-top: 23px;
-  right: 100px;
-}
+app-google-graf{
 
-.StraficB3 {
-  position: absolute;
-  padding-top: 23px;
-  right: 55px;
+    position: absolute;
+    width: 500px;
+    height: 90vh;
+    margin-left: 930px;
+    top: 1640px;
+
 }
 
 
 .Straficktext {
   position: absolute;
   padding-top: 10px;
-  padding-left: 100px;
+  padding-left: 30px;
 }
 
-app-strafick-graf {
+.SideMain {
 
+  width: calc(100% - 80px);
+  top: 0;
+  left: 70px;
+  float: right;
 
 }
 
@@ -116,4 +131,11 @@ button:disabled {
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.PageDown {
+  background-color: #5656ec0f;
+  margin-top: 50px;
+  height: 110vh;
+  width: 100%;
 }
