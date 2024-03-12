@@ -9,6 +9,12 @@ import {StrafickGrafComponent} from "./strafick-graf/strafick-graf.component";
 import {HttpClientModule} from "@angular/common/http";
 import {GoogleGrafComponent} from "./google-graf/google-graf.component";
 import {StrafickinfoComponent} from "./strafickinfo/strafickinfo.component";
+import {SelAComponent} from "./sel-a/sel-a.component";
+import {SelBComponent} from "./sel-b/sel-b.component";
+import {SelCComponent} from "./sel-c/sel-c.component";
+import {SelDComponent} from "./sel-d/sel-d.component";
+import {SelEComponent} from "./sel-e/sel-e.component";
+import {SelFComponent} from "./sel-f/sel-f.component";
 
 @Component({
   standalone: true,
@@ -25,6 +31,12 @@ import {StrafickinfoComponent} from "./strafickinfo/strafickinfo.component";
     StrafickGrafComponent,
     GoogleGrafComponent,
     StrafickinfoComponent,
+    SelAComponent,
+    SelBComponent,
+    SelCComponent,
+    SelDComponent,
+    SelEComponent,
+    SelFComponent,
   ]
 })
 
