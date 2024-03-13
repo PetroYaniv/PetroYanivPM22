@@ -136,7 +136,7 @@ button:disabled {
 .PageDown {
   background-color: #5656ec0f;
   margin-top: 50px;
-  height: 104vh;
+  height: 165vh;
   width: 100%;
 
 }
@@ -198,4 +198,35 @@ app-sel-f {
   max-width: 250px;
   max-height: 150px;
   margin-top: -200px;
+}
+
+app-profil {
+  display: flow;
+  background-color: white;
+  margin-left: 35px;
+  max-width: 30%;
+  height: 600px;
+  margin-top: 50px;
+}
+
+app-todo {
+  display: flow;
+  background-color: white;
+  margin-left: 530px;
+  max-width: 30%;
+  height: 600px;
+  margin-top: -630px;
+}
+
+app-messag {
+  display: flow;
+  background-color: white;
+  margin-left: 990px;
+  max-width: 30%;
+  height: 600px;
+  margin-top: -620px;
+}
+
+app-downpage {
+  display: flow;
 }

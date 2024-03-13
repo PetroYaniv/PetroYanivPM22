@@ -15,6 +15,10 @@ import {SelCComponent} from "./sel-c/sel-c.component";
 import {SelDComponent} from "./sel-d/sel-d.component";
 import {SelEComponent} from "./sel-e/sel-e.component";
 import {SelFComponent} from "./sel-f/sel-f.component";
+import {ProfilComponent} from "./profil/profil.component";
+import {TodoComponent} from "./todo/todo.component";
+import {MessagComponent} from "./messag/messag.component";
+import {DownpageComponent} from "./downpage/downpage.component";
 
 @Component({
   standalone: true,
@@ -37,6 +41,10 @@ import {SelFComponent} from "./sel-f/sel-f.component";
     SelDComponent,
     SelEComponent,
     SelFComponent,
+    ProfilComponent,
+    TodoComponent,
+    MessagComponent,
+    DownpageComponent,
   ]
 })
 
