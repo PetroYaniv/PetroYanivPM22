@@ -3,5 +3,10 @@
   <p class="S41"><b>1,600,000<br>USD</b></p>
 </div>
 <div class="S43">
-  <canvas id="Sel04" height="325px" ></canvas>
+  <canvas baseChart height="325px"
+
+          [type]="'line'"
+          [data]="ChartData"
+          [options]="lineChartOptions"
+          [labels]="ChartLabel"></canvas>
 </div>

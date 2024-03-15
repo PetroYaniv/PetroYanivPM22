@@ -7,7 +7,12 @@
     <img src="assets/img/variant-26-110.png">
   </a>
   <div class="G36">
-    <canvas id="Graf03"></canvas>
+    <canvas  baseChart
+             [type]="barChartType"
+             [data]="ChartData"
+             [options]="lineChartOptions"
+             [labels]="ChartLabel"
+    ></canvas>
   </div>
   <p class="G38">Today</p>
   <p class="G313">Yesterday</p>

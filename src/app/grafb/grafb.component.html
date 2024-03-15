@@ -4,7 +4,12 @@
   <p class="G23">1.4%</p>
   <p class="G24"><b>$25.534</b></p>
   <div class="G25">
-    <canvas id="Graf02"></canvas>
+    <canvas  baseChart
+             [type]="'line'"
+             [data]="ChartData"
+             [options]="lineChartOptions"
+             [labels]="ChartLabel"
+    ></canvas>
   </div>
 
   <a href="#" class="G222">

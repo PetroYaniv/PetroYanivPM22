@@ -2,4 +2,9 @@
   <p class="S11"><b>45.002</b></p>
   <p class="S11">Sales</p>
   <div class="S13">
-    <canvas id="Sel01"></canvas>
+    <canvas baseChart
+            [type]="'bar'"
+            [data]="ChartData"
+            [options]="lineChartOptions"
+            [labels]="ChartLabel"
+    ></canvas>

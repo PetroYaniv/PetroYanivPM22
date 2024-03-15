@@ -1,5 +1,11 @@
 <p class="S51"><b>18% Total</b></p>
 <p class="S51">Visitors</p>
 <div class="S53">
-  <canvas id="Sel05"></canvas>
+  <canvas
+    baseChart
+    [type]="'pie'"
+    [data]="ChartData"
+    [options]="lineChartOptions"
+    [labels]="ChartLabel"
+  ></canvas>
 </div>

@@ -7,13 +7,14 @@ import {SgrafService} from "./app/sgraf.service";
 import { provideRouter, Routes } from '@angular/router';
 import { importProvidersFrom } from '@angular/core';
 import {StrafickGrafComponent} from "./app/strafick-graf/strafick-graf.component";
+import { provideCharts, withDefaultRegisterables } from 'ng2-charts';
 
 const routes:Routes=[
 { path: "StrafickGraf", component: StrafickGrafComponent },
 ]
 bootstrapApplication(AppComponent,{
 
-  providers:[provideRouter(routes),SgrafService, importProvidersFrom(HttpClientModule)]
+  providers:[provideRouter(routes),SgrafService, importProvidersFrom(HttpClientModule), provideCharts(withDefaultRegisterables())]
 })
   .catch((err) => console.error(err));
 

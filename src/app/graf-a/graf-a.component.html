@@ -4,7 +4,13 @@
   <p class="G13">6.31%</p>
   <p class="G14"><b>345</b></p>
   <div class="G15">
-    <canvas id="Graf01"></canvas>
+    <canvas baseChart
+            [type]="'line'"
+            [data]="ChartData"
+            [options]="lineChartOptions"
+            [labels]="ChartLabel"
+
+    ></canvas>
   </div>
 
   <a href="#" class="G123">
