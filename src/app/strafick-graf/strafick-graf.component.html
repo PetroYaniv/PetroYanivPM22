@@ -2,6 +2,11 @@
 <!--  <h1>{{grafinf.labelsmonth}}</h1>-->
   <button type="button" (click)="ButtonClick('m')" id="Butm">Month</button>
   <button type="button" (click)="ButtonClick('y')" id="Buty">Year</button>
-  <canvas id="myChart"  ></canvas>
+  <canvas  baseChart
+           [type]="'line'"
+           [data]="ChartData"
+           [options]="lineChartOptions"
+           [labels]="ChartData.labels"
+  ></canvas>
 
 </div>

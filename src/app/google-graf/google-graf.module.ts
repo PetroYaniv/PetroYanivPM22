@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {GoogleGrafRoutingModule} from './google-graf-routing.module';
 import {HttpClientModule} from "@angular/common/http";
 import {SgrafService} from "../sgraf.service";
+import {provideCharts, withDefaultRegisterables} from "ng2-charts";
 
 @NgModule({
   declarations: [],
@@ -12,6 +13,6 @@ import {SgrafService} from "../sgraf.service";
     HttpClientModule,
 
   ],
-  providers:[SgrafService]
+  providers:[SgrafService,provideCharts(withDefaultRegisterables())]
 })
 export class GoogleGrafModule { }

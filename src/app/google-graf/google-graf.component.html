@@ -1,6 +1,12 @@
 <div class="StrafickGoogle">
   <div class="StrafickG">
-    <canvas id="StrafickG01"></canvas>
+
+    <canvas baseChart
+            [type]="'doughnut'"
+            [data]="ChartData"
+            [options]="lineChartOptions"
+            [labels]="ChartData.labels"
+    ></canvas>
   </div>
   <p class="StraGG1"><b>Chrome</b></p>
   <p class="StraGG12">56%</p>
