@@ -20,6 +20,7 @@ import {TodoComponent} from "./todo/todo.component";
 import {MessagComponent} from "./messag/messag.component";
 import {DownpageComponent} from "./downpage/downpage.component";
 
+
 @Component({
   standalone: true,
   selector: 'app-root',
@@ -45,6 +46,7 @@ import {DownpageComponent} from "./downpage/downpage.component";
     TodoComponent,
     MessagComponent,
     DownpageComponent,
+
   ]
 })
 

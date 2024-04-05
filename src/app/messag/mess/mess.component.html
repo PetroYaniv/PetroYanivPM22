@@ -1,0 +1,46 @@
+<div style="display: flex; margin-top: 65px; padding-left: 40px">
+  <a href="#">
+    <img [srcset]=this.IconUrl class="MIM" >
+  </a>
+  <div *ngIf="Online" class="OnL"><img [srcset]=this.OnlineURL[0] ></div>
+  <div *ngIf="!Online" class="OnL"><img [srcset]=this.OnlineURL[1] ></div>
+  <div style="display: flow; margin-top: -20px; padding-left: 20px">
+    <p ><b>{{this.MesName}}</b></p>
+    <p >{{this.MessCont}}</p>
+    <div *ngIf="this.messages[IDname] ">
+      <div class="Answer">{{'You: ' + this.messages[this.IDname] }}</div>
+    </div>
+    <div *ngIf="this.showForm == true">
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)" >
+        <div style="margin-top: 10px; display: flex">
+
+          <label style="display: flow">
+
+            <div>
+              <input style="height: 20px; width: 200px;"
+                     #newMess
+                     (keyup.enter)="addMess(newMess.value)"
+                     (blur)="addMess(newMess.value); newMess.value = ''"
+                     placeholder="Your message"
+              />
+            </div>
+          </label>
+          <div *ngIf="myForm.get('message').invalid && (myForm.get('message').dirty || myForm.get('message').touched)">
+            Messages must be at least 15 characters long.
+          </div>
+        </div>
+<div style="display: flex">
+        <button type="submit" [disabled]="myForm.invalid" (click)="addMess(newMess.value)">Send</button>
+
+</div>
+      </form>
+    </div>
+
+  </div>
+  <div style="display: flow" class="M4">
+  <p>{{this.timeMess}}</p>
+  <div *ngIf="this.showForm == false">
+    <button type="button" style="padding-right: 10px" (click)="UpDateName('James Bond',0)">Answer</button>
+  </div>
+  </div>
+</div>

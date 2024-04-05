@@ -1,51 +1,31 @@
 <p class="M00"><b>You Have 5 New Messages</b></p>
 <div style="display: flow">
-<div style="display: flex; margin-top: 50px; padding-left: 40px">
-<a href="#">
-  <img src="assets/img/variant-26-253.png" class="MIM" >
-</a>
-
-<img src="assets/img/variant-26-254.png" class="OnL">
-  <div style="display: flow; margin-top: -20px; padding-left: 20px">
-<p ><b>James Bond</b></p>
-<p >Like my new Portfolio</p>
-  </div>
-<p class="M4">01:23 AM</p>
-</div>
-<div style="display: flex; margin-top: 50px; padding-left: 40px">
-<a href="#" >
-  <img src="assets/img/variant-26-261.png" class="MIM">
-</a>
-
-<img src="assets/img/variant-26-262.png" class="OnL">
-  <div style="display: flow; margin-top: -20px; padding-left: 20px">
-<p ><b>Andi Susanto</b></p>
-<p >I have sing a song</p>
-  </div>
-<p class="M4">06:33 AM</p>
-</div>
-<div style="display: flex; margin-top: 50px; padding-left: 40px">
-<a href="#" >
-  <img src="assets/img/variant-26-269.png" class="MIM">
-</a>
-
-<img src="assets/img/variant-26-271.png" class="OnL">
-  <div style="display: flow; margin-top: -20px; padding-left: 20px">
-<p ><b>Muing Siswoyo</b></p>
-<p >Just Design new Dribbble</p>
-  </div>
-<p class="M4">04:10 PM</p>
-</div>
-<div style="display: flex; margin-top: 50px; padding-left: 40px">
-<a href="#" >
-  <img src="assets/img/variant-26-277.png" class="MIM">
-</a>
-
-<img src="assets/img/variant-26-278.png" class="OnL">
-  <div style="display: flow; margin-top: -20px; padding-left: 20px">
-    <p ><b>Jatuh Pribumi</b></p>
-<p  style="text-wrap: nowrap">There`s new comment for you</p>
-  </div>
-<p class="M4">11:23 AM</p>
-</div>
+  <app-mess
+  [IconUrl]=this.IconUrl[0]
+  [Online]=true
+  [MesName]=this.MessName[0]
+  [MessCont]=this.MessagText[0]
+  [timeMess]=this.time[0]
+  ></app-mess>
+  <app-mess
+    [IconUrl]=this.IconUrl[1]
+    [Online]=true
+    [MesName]=this.MessName[1]
+    [MessCont]=this.MessagText[1]
+    [timeMess]=this.time[1]
+  ></app-mess>
+  <app-mess
+    [IconUrl]=this.IconUrl[2]
+    [Online]=false
+    [MesName]=this.MessName[2]
+    [MessCont]=this.MessagText[2]
+    [timeMess]=this.time[2]
+  ></app-mess>
+  <app-mess
+    [IconUrl]=this.IconUrl[3]
+    [Online]=true
+    [MesName]=this.MessName[3]
+    [MessCont]=this.MessagText[3]
+    [timeMess]=this.time[3]
+  ></app-mess>
 </div>
