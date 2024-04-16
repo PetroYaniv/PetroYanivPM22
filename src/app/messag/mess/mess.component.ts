@@ -1,18 +1,22 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {NgIf} from "@angular/common";
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
+import { HttpClient } from '@angular/common/http';
+import {SgrafService} from "../../sgraf.service";
+
 
 @Component({
   selector: 'app-mess',
   standalone: true,
     imports: [
+
         NgIf,
         ReactiveFormsModule
     ],
   templateUrl: './mess.component.html',
   styleUrl: '../messag.component.scss'
 })
-export class MessComponent {
+export class MessComponent implements OnInit{
   myForm: FormGroup | any;
   @Input() MesName="";
   @Input() Online!:boolean;
@@ -23,7 +27,7 @@ export class MessComponent {
   messages=[];
   @Input() showForm: boolean=false;
   @Input() IconUrl!: string;
-
+  showError:boolean = false;
 
 
 
@@ -33,26 +37,30 @@ export class MessComponent {
     this.IDname = IDm
     this.showForm = true;
   }
-  constructor(private fb: FormBuilder) {
-
-
-  }
+  constructor(private fb: FormBuilder,private service: SgrafService) {}
 
   ngOnInit() {
 
     this.myForm = this.fb.group({
-      message: ['', [Validators.required, Validators.minLength(1)]],
+      message: ['', [Validators.required, Validators.minLength(10)]],
     });
   }
-  addMess(newMess: string) {
-    if (newMess) {
+  addMess(form: FormGroup) {
 
-      // @ts-ignore
-      this.messages[this.IDname] = newMess;
-      this.showForm = false;
 
-    }
+
+        // @ts-ignore
+        this.messages[this.IDname] = form;
+        this.showForm = false;
+        this.service.SendDataPOST(form).subscribe((res) => {});
+        //console.log(
+       //this.service.GetServerData().subscribe(data => { }));
+
   }
+
+
+
+
   onSubmit(form: FormGroup) {
     console.log('Valid?', form.valid); // true or false
     console.log('Message', form.value.message);

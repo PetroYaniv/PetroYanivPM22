@@ -1,31 +1,10 @@
 <p class="M00"><b>You Have 5 New Messages</b></p>
 <div style="display: flow">
-  <app-mess
-  [IconUrl]=this.IconUrl[0]
+  <app-mess  *ngFor="let messinfo of mass"
+  [IconUrl]=messinfo.IconURL
   [Online]=true
-  [MesName]=this.MessName[0]
-  [MessCont]=this.MessagText[0]
-  [timeMess]=this.time[0]
-  ></app-mess>
-  <app-mess
-    [IconUrl]=this.IconUrl[1]
-    [Online]=true
-    [MesName]=this.MessName[1]
-    [MessCont]=this.MessagText[1]
-    [timeMess]=this.time[1]
-  ></app-mess>
-  <app-mess
-    [IconUrl]=this.IconUrl[2]
-    [Online]=false
-    [MesName]=this.MessName[2]
-    [MessCont]=this.MessagText[2]
-    [timeMess]=this.time[2]
-  ></app-mess>
-  <app-mess
-    [IconUrl]=this.IconUrl[3]
-    [Online]=true
-    [MesName]=this.MessName[3]
-    [MessCont]=this.MessagText[3]
-    [timeMess]=this.time[3]
+  [MesName]=messinfo.name
+  [MessCont]=messinfo.text
+  [timeMess]=messinfo.time
   ></app-mess>
 </div>

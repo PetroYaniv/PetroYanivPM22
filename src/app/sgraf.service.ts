@@ -15,5 +15,22 @@ export class SgrafService {
   {
     return this.http.get('../../assets/data.json');
   }
+
+  SendDataPOST(mess:any)
+  {
+
+    return this.http.post('http://localhost:8080',mess, {
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
+    });
+
+
+  }
+
+  GetServerData(){
+    return this.http.get('http://localhost:8080');
+  }
+
   constructor(private http: HttpClient) { }
 }

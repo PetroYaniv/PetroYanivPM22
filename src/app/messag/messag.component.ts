@@ -24,20 +24,41 @@ import {MessComponent} from "./mess/mess.component";
 })
 export class MessagComponent implements OnInit{
   myForm: FormGroup | any;
-  MessName=["James Bond","Andi Susanto","Muing Siswoyo","Jatuh Pribumi"];
   IDname: any;
   OnlineURL:string="";
-  time=["01:23 AM","06:33 AM","04:10 PM","11:23 AM"];
-  MessagText=["Like my new Portfolio","I have sing a song","Just Design new Dribbble","There`s new comment for you"]
   messages=[];
   showForm: boolean=false;
-  IconUrl=["assets/img/variant-26-253.png","assets/img/variant-26-261.png","assets/img/variant-26-269.png","assets/img/variant-26-277.png" ]
+  mass=[
+    {
+      name: "James Bond",
+      time: "01:23 AM",
+      text:"Like my new Portfolio",
+      IconURL:"assets/img/variant-26-253.png",
+    }  ,
+    {
+      name: "Andi Susanto",
+      time: "06:33 AM",
+      text:"I have sing a song",
+      IconURL:"assets/img/variant-26-261.png",
+    },
+    {
+      name: "Muing Siswoyo",
+      time: "04:10 PM",
+      text:"Just Design new Dribbble",
+      IconURL:"assets/img/variant-26-269.png",
+    },
+    {
+      name:"There`s new comment for you",
+      time: "11:23 AM",
+      text:"I have sing a song",
+      IconURL:"assets/img/variant-26-277.png",
+    }
+  ]
 
-
- UpDateName(Name:string, IDm:number){
-   this.IDname = IDm
-   this.showForm = true;
- }
+  UpDateName(Name:string, IDm:number){
+    this.IDname = IDm
+    this.showForm = true;
+  }
   constructor(private fb: FormBuilder) {}
 
   ngOnInit() {
