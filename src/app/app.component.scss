@@ -80,7 +80,7 @@ button:hover {
   color: white;
 }
 .StrafickUp{
- padding-top: 1170px;
+ padding-top: 70px;
 }
 
 .Strafickline {
@@ -102,8 +102,14 @@ app-google-graf{
     width: 500px;
     height: 90vh;
     margin-left: 930px;
-    top: 1640px;
+    top: 470px;
 
+}
+
+.HeadI5 {
+  position: absolute;
+  margin-left: 1400px;
+  margin-top: -20px;
 }
 
 
@@ -133,9 +139,11 @@ button:disabled {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 .PageDown {
   background-color: #5656ec0f;
-  margin-top: 50px;
+  margin-top: 400px;
   height: 173vh;
   width: 100%;
 
@@ -209,13 +217,51 @@ app-profil {
   margin-top: 50px;
 }
 
-app-todo {
+
+.todo {
   display: flow;
   background-color: white;
-  margin-left: 530px;
+  margin-left: 600px;
+  max-width: 50%;
+  height: 670px;
+  margin-top: -700px;
+}
+
+.messag {
+  display: flow;
+  background-color: white;
+  margin-left: 990px;
   max-width: 30%;
   height: 670px;
   margin-top: -700px;
+}
+
+app-todo {
+  display: flow;
+  background-color: white;
+  margin-left: 600px;
+  max-width: 30%;
+  height: 670px;
+  margin-top: -700px;
+}
+
+a{
+  margin-top: 10px;
+  text-decoration: none;
+
+}
+
+.maproute {
+  position: absolute;
+  padding-left: 100px;
+  padding-top: 300px;
+}
+
+.goback {
+  font-size: 30px;
+  position: absolute;
+  padding-left: 1400px;
+  padding-top: 650px;
 }
 
 app-messag {
@@ -224,7 +270,7 @@ app-messag {
   margin-left: 990px;
   max-width: 30%;
   height: 670px;
-  margin-top: -700px;
+  margin-top: -750px;
 }
 
 app-downpage {

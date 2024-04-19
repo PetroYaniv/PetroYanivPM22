@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
 
+    protected readonly window = window;
 }

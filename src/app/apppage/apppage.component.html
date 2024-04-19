@@ -1,0 +1,71 @@
+<div class="Page" style="display: flex">
+  <app-sidebar></app-sidebar>
+  <div class="SideMain">
+    <app-uppage></app-uppage>
+    <a class="HeadI5" (click)="window.localStorage.removeItem('authed')">
+      <img src="assets/img/variant-26-339.png"  >
+    </a>
+    <div class="DashB">
+      <p class="DashBOR" ><b>Dashboard</b></p>
+      <p class="DashBD" >Welcome to Admin Sayang, Responsive Web Admin Template</p>
+    </div>
+
+    <app-graf-a></app-graf-a>
+    <app-grafb></app-grafb>
+    <app-grafc></app-grafc>
+
+    <div class="StrafickUp">
+      <img src="assets/img/variant-26-160.png" class="Strafickline">
+      <p class="Straficktext">Site Traffic</p>
+      <div class="StrafickB" style="float:right;">
+        <a href="#" class="StraficB1">
+          <img src="assets/img/variant-26-162.png">
+        </a>
+        <a href="#" class="StraficB1">
+          <img src="assets/img/variant-26-163.png">
+        </a>
+        <a href="#" class="StraficB1">
+          <img src="assets/img/variant-26-164.png">
+        </a>
+      </div>
+    </div>
+    <app-strafick-graf></app-strafick-graf>
+    <app-google-graf></app-google-graf>
+    <app-strafickinfo></app-strafickinfo>
+    <div class="PageDown">
+      <app-sel-a></app-sel-a>
+      <app-sel-b></app-sel-b>
+      <app-sel-c></app-sel-c>
+      <app-sel-d></app-sel-d>
+      <app-sel-e></app-sel-e>
+      <app-sel-f></app-sel-f>
+      <app-profil></app-profil>
+      <div class ="todo">
+
+        <nav style="display: inline-grid">
+          <a
+            routerLinkActive="active"
+            routerLink="todo"
+            ariaCurrentWhenActive="page"
+          >
+            show todo
+          </a>
+
+          <a
+            routerLinkActive="active"
+            routerLink="mess"
+            ariaCurrentWhenActive="page"
+          >
+            show messages
+          </a>
+        </nav>
+
+        <router-outlet ></router-outlet>
+      </div>
+
+      <app-downpage></app-downpage>
+
+    </div>
+
+  </div>
+</div>

@@ -19,6 +19,9 @@ import {ProfilComponent} from "./profil/profil.component";
 import {TodoComponent} from "./todo/todo.component";
 import {MessagComponent} from "./messag/messag.component";
 import {DownpageComponent} from "./downpage/downpage.component";
+import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
+import {ApppageComponent} from "./apppage/apppage.component";
+import {NgIf} from "@angular/common";
 
 
 @Component({
@@ -27,6 +30,7 @@ import {DownpageComponent} from "./downpage/downpage.component";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   imports: [
+    NgIf,
     UpPageComponent,
     SidebarComponent,
     MapComponent,
@@ -46,6 +50,10 @@ import {DownpageComponent} from "./downpage/downpage.component";
     TodoComponent,
     MessagComponent,
     DownpageComponent,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
+    ApppageComponent,
 
   ]
 })
@@ -56,8 +64,16 @@ export class AppComponent {
 
   }
   constructor() {
+   window.localStorage.setItem('authed','1')
+  }
+
+  showlink: boolean =true;
+
+  UpdateShowLink(t:boolean){
+
+    this.showlink = t;
 
   }
 
-
+    protected readonly window = window;
 }
