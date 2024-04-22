@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
 import {Routes, RouterModule} from "@angular/router";
-import {MessagComponent} from "./messag.component";
-
+import {MapComponent} from "./map.component";
 
 const routes: Routes = [
   {
-    path: '', component:  MessagComponent ,
+    path: '', component:  MapComponent ,
 
   }
 ];
@@ -16,11 +14,8 @@ const routes: Routes = [
   declarations: [],
   imports: [
     CommonModule,
-    ReactiveFormsModule,
     [RouterModule.forChild(routes)],
-
-],
+  ],
   exports: [RouterModule]
-
 })
-export class MessagModule { }
+export class MapModule { }
